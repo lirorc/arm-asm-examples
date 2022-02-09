@@ -9,6 +9,6 @@ msg:
 _start:
   mov x3, #1  //write to stdout
   mov x2, #12 //length of the string
-  ldr x1, =msg//address of the string
+  adr x1, msg //address of the string
   mov x8, #64 //sys_write opcode
   svc #0
