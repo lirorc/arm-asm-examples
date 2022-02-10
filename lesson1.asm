@@ -7,8 +7,8 @@ msg:
 .text
 .globl _start
 _start:
-  mov x3, #1  //write to stdout
   mov x2, #12 //length of the string
   adr x1, msg //address of the string
+  mov x0, #1  //write to stdout
   mov x8, #64 //sys_write opcode
   svc #0
