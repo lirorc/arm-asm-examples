@@ -8,7 +8,7 @@ msg:
 .globl _start
 _start:
   adr x0, msg // address of the string
-  bl strlen
+  bl strlen   // call strlen
 
   mov x2, x0  // strlen leaves result on x0
   adr x1, msg // these are same as before
