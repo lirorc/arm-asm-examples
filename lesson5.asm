@@ -1,4 +1,4 @@
-.include "functions5.asm"
+.include "lesson5funs.asm"
 .data
 msg:
 .byte 'H','e','l','l','o', 0x0A
