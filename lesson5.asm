@@ -15,5 +15,4 @@ _start:
   adr x0, msg2
   bl sprint
 
-  add sp, sp, 16
   b quit
