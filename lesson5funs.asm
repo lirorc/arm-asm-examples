@@ -19,13 +19,13 @@ sprint:
   stp x2, x3, [sp, 16] // push x2, x3
 
   sub sp, sp, 16
-  str lr, [sp]
+  str lr, [sp]         // store link register
   bl slen
   ldr lr, [sp]
   add sp, sp, 16
 
   mov x2, x0
-  ldr x0, [sp] // pop x0
+  ldr x0, [sp]         // pop x0
 
   mov x1, x0
   mov x0, 1
@@ -38,6 +38,6 @@ sprint:
   ret
 
 quit:
-  mov x0, 0x0 // return 0
+  mov x0, 0x0          // return 0
   mov x8, 93
   svc 0
