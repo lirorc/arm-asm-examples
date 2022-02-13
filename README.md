@@ -1,2 +1,2 @@
 # arm-asm-examples
-Me, trying loosely to port asmtutor code to AArch64.
+Me, trying to port asmtutor code to AArch64.
