@@ -5,15 +5,12 @@ iprint:
   mov x2, 0
 divideLoop:
   add x2, x2, 1
-//mov x1, 0
   mov x3, 10
   udiv x9, x0, x3
   msub x10, x9, x3, x0
   mov x0, x9
   add x10, x10, 48
-//push esp while in a loop?
-//I chose the dirty route
-  str x10, [sp, -16]!
+  str x10, [sp, -16]! // needs to be 16 bit aligned
   cmp x0, 0
   bne divideLoop
 printLoop:
